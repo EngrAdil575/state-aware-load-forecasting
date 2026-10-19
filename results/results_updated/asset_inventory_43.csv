@@ -1,0 +1,44 @@
+AssetId,asset_type,is_submeter,first,last,days_with_reliable_data,mean_demand_kw,max_15min_kw,test_period_coverage_pct,status
+ex_a,HVAC_AirExtraction,True,2025-05-22,2025-12-31,223,2.75,14.18,99.1,"eligible, not selected (included in the 25-asset check)"
+mix_b,ProcessMixing,True,2024-12-31,2025-12-31,362,0.91,49.26,99.1,"eligible, not selected (included in the 25-asset check)"
+mix_c,ProcessMixing,True,2024-12-31,2025-12-31,363,1.52,65.71,99.1,"eligible, not selected (included in the 25-asset check)"
+p_a,Press_Main,True,2025-02-21,2025-12-31,308,3.58,27.25,99.6,"eligible, not selected (included in the 25-asset check)"
+p_d,Press_Drive,True,2025-02-20,2025-12-31,302,6.9,49.06,99.6,"eligible, not selected (included in the 25-asset check)"
+p_f,Press_IntegratedAutomationCell,True,2024-12-31,2025-12-31,305,18.83,79.09,72.3,"eligible, not selected (included in the 25-asset check)"
+p_h,Press_Main,True,2025-02-20,2025-12-31,309,2.73,12.86,99.6,"eligible, not selected (included in the 25-asset check)"
+p_i,Press_Main,True,2025-03-21,2025-12-31,283,7.76,35.67,99.6,"eligible, not selected (included in the 25-asset check)"
+p_l,Press_Main,True,2025-03-21,2025-12-31,283,7.33,38.34,99.6,"eligible, not selected (included in the 25-asset check)"
+p_m,Press_Main,True,2025-03-21,2025-12-31,283,5.67,36.27,99.6,"eligible, not selected (included in the 25-asset check)"
+u_b,Utilities,True,2025-05-22,2025-12-31,223,3.67,6.03,99.1,"eligible, not selected (included in the 25-asset check)"
+u_c,Utilities,True,2025-05-22,2025-12-31,223,3.37,10.91,99.1,"eligible, not selected (included in the 25-asset check)"
+p_j,Press_Drive,True,2025-12-18,2025-12-31,14,0.63,3.24,18.5,excluded: fewer than 220 days of reliable data
+p_n,Press_Main,True,2025-12-19,2025-12-31,13,0.07,21.37,16.9,excluded: fewer than 220 days of reliable data
+php_c,Press_Heating,True,2025-08-17,2025-12-31,137,2.86,18.51,99.6,excluded: fewer than 220 days of reliable data
+php_j,Press_Heating,True,2025-12-18,2025-12-31,14,0.0,3.95,18.5,excluded: fewer than 220 days of reliable data
+pr_e,Automation_Robot,True,2025-11-19,2025-12-31,43,0.78,4.27,57.2,excluded: fewer than 220 days of reliable data
+pr_f,Automation_Robot,True,2025-11-20,2025-12-31,42,2.1,7.67,55.9,excluded: fewer than 220 days of reliable data
+pr_k,Automation_Robot,True,2025-11-18,2025-12-31,44,2.27,6.4,58.6,excluded: fewer than 220 days of reliable data
+ahu_c,HVAC_AHU,True,2024-12-31,2025-12-31,362,0.27,1.26,99.1,excluded: mean demand below 0.5 kW
+hp_a,HVAC_HeatPump,True,2025-04-30,2025-12-31,245,0.01,0.09,99.6,excluded: mean demand below 0.5 kW
+hp_b,HVAC_HeatPump,True,2025-04-30,2025-12-31,245,0.0,0.09,99.6,excluded: mean demand below 0.5 kW
+mix_d,ProcessMixing,True,2024-12-31,2025-12-31,363,0.35,17.08,99.1,excluded: mean demand below 0.5 kW
+u_a,Utilities,True,2025-05-22,2025-12-31,222,0.34,14.18,89.6,excluded: mean demand below 0.5 kW
+u_d,Utilities,True,2024-12-31,2025-12-31,362,0.02,0.68,99.1,excluded: mean demand below 0.5 kW
+mi_a,Electrical_GridImport,False,2025-05-22,2025-12-31,223,232.24,591.31,99.1,"excluded: not a single machine (distribution board, grid import, or PV meter)"
+mi_b,Electrical_PVGeneration,False,2025-04-30,2025-12-31,244,0.05,0.42,99.5,"excluded: not a single machine (distribution board, grid import, or PV meter)"
+sb_a,Electrical_Distribution,True,2025-05-22,2025-12-31,223,52.06,144.13,99.1,"excluded: not a single machine (distribution board, grid import, or PV meter)"
+sb_b,Electrical_Distribution,True,2025-05-23,2025-12-31,222,23.26,118.36,99.1,"excluded: not a single machine (distribution board, grid import, or PV meter)"
+sb_c,Electrical_Distribution,True,2025-04-30,2025-12-31,242,0.02,0.17,98.9,"excluded: not a single machine (distribution board, grid import, or PV meter)"
+ahu_a,HVAC_AHU,True,2024-12-31,2025-12-23,345,6.94,30.83,83.5,selected
+ahu_b,HVAC_AHU,True,2024-12-31,2025-12-31,362,1.0,2.92,99.1,selected
+comp_a,CompressedAir,True,2025-05-22,2025-12-31,223,12.93,76.32,99.1,selected
+comp_b,CompressedAir,True,2025-05-22,2025-12-31,223,14.44,76.24,99.1,selected
+ex_b,HVAC_AirExtraction,True,2024-12-31,2025-12-31,348,23.12,34.63,99.1,selected
+mh_a,Automation_Handling,True,2024-12-31,2025-12-31,363,1.6,10.73,99.1,selected
+mix_a,ProcessMixing,True,2024-12-31,2025-12-31,362,1.39,59.82,99.1,selected
+p_b,Press_Main,True,2024-12-31,2025-12-31,350,10.6,68.21,99.6,selected
+p_c,Press_Drive,True,2025-05-21,2025-12-31,223,4.32,30.36,99.6,selected
+p_e,Press_Drive,True,2025-02-05,2025-12-31,328,7.25,39.11,99.6,selected
+p_g,Press_Main,True,2025-03-21,2025-12-31,282,6.46,32.43,99.6,selected
+p_k,Press_Main,True,2024-12-31,2025-12-31,357,24.41,72.25,99.6,selected
+u_e,Utilities,True,2024-12-31,2025-12-31,362,5.38,22.68,99.1,selected

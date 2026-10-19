@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+# Status: manuscript submitted to ACM Transactions on Internet of Things (ACM TIoT), under review. Not yet published.
+message: "If you use this repository, please cite the manuscript below (submitted to ACM Transactions on Internet of Things, under review) and the original dataset of Flynn et al. (2026)."
+title: "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets"
+type: software
+authors:
+  - family-names: Zohaib
+    given-names: Adil
+    affiliation: "Riphah International University, Pakistan"
+  - family-names: Ahmed
+    given-names: Bilal
+    affiliation: "Riphah International University, Pakistan"
+  - family-names: Khan
+    given-names: Muhammad Amad
+    affiliation: "Riphah International University, Pakistan"
+  - family-names: Nawaz
+    given-names: Saqib
+    affiliation: "Riphah International University, Pakistan"
+  - family-names: Sheh Zad
+    given-names: Haris
+    affiliation: "Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology, Pakistan"
+  - family-names: Khalid
+    given-names: Sohail
+    affiliation: "University of Management and Technology, Pakistan"
+year: 2026
+license: MIT
+references:
+  - type: data
+    title: "An open industrial energy dataset with asset-level measurements and high-coverage 15-minute aggregates from a manufacturing facility"
+    authors:
+      - family-names: Flynn
+        given-names: C.
+      - family-names: Murphy
+        given-names: T.
+      - family-names: Walsh
+        given-names: J.
+      - family-names: Riordan
+        given-names: D.
+    journal: "Data"
+    volume: 11
+    issue: 5
+    year: 2026
+    doi: "10.3390/data11050101"
+    license: CC-BY-4.0

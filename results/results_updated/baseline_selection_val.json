@@ -1,0 +1,35 @@
+{
+ "1": {
+  "val_rmse": {
+   "ARIMA": 3.819,
+   "VAR": 3.825,
+   "Random Forest": 3.142,
+   "XGBoost": 2.978,
+   "LSTM": 3.566,
+   "TCN": 3.317
+  },
+  "selected": "XGBoost"
+ },
+ "6": {
+  "val_rmse": {
+   "ARIMA": 7.69,
+   "VAR": 7.796,
+   "Random Forest": 5.906,
+   "XGBoost": 5.807,
+   "LSTM": 6.361,
+   "TCN": 6.21
+  },
+  "selected": "XGBoost"
+ },
+ "24": {
+  "val_rmse": {
+   "ARIMA": 9.037,
+   "VAR": 9.047,
+   "Random Forest": 7.745,
+   "XGBoost": 7.173,
+   "LSTM": 7.68,
+   "TCN": 7.633
+  },
+  "selected": "XGBoost"
+ }
+}

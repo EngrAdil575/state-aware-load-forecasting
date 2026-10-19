@@ -1,0 +1,56 @@
+{
+ "1": {
+  "lag_1 = z(t-H)": true,
+  "lag_24 = z(t-H-23)": true,
+  "q_lag_1 = window [o-15min, o)": true,
+  "q window ends at origin <= start of target hour": true,
+  "hour_sin from target hour": true,
+  "split by target hour": true,
+  "rp_week_mean uses t-168k": true,
+  "prev day ends before origin": true,
+  "n_test": 22129,
+  "n_switch": 1071,
+  "switch_share_%": 4.84,
+  "split_rows": {
+   "train": 61718,
+   "test": 22129,
+   "val": 11037
+  }
+ },
+ "6": {
+  "lag_1 = z(t-H)": true,
+  "lag_24 = z(t-H-23)": true,
+  "q_lag_1 = window [o-15min, o)": true,
+  "q window ends at origin <= start of target hour": true,
+  "hour_sin from target hour": true,
+  "split by target hour": true,
+  "rp_week_mean uses t-168k": true,
+  "prev day ends before origin": true,
+  "n_test": 22024,
+  "n_switch": 1066,
+  "switch_share_%": 4.84,
+  "split_rows": {
+   "train": 61377,
+   "test": 22024,
+   "val": 11021
+  }
+ },
+ "24": {
+  "lag_1 = z(t-H)": true,
+  "lag_24 = z(t-H-23)": true,
+  "q_lag_1 = window [o-15min, o)": true,
+  "q window ends at origin <= start of target hour": true,
+  "hour_sin from target hour": true,
+  "split by target hour": true,
+  "rp_week_mean uses t-168k": true,
+  "prev day ends before origin": true,
+  "n_test": 22000,
+  "n_switch": 1072,
+  "switch_share_%": 4.87,
+  "split_rows": {
+   "train": 60529,
+   "test": 22000,
+   "val": 10976
+  }
+ }
+}

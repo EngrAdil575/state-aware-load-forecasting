@@ -1,0 +1,274 @@
+H,model,Asset,Type,RMSE,NRMSE
+1,Persistence,p_b,Press (main),8.309049870389908,15.002789681590894
+1,Persistence,p_c,Press (drive),2.1957315937303994,9.231137377175747
+1,Persistence,p_e,Press (drive),2.152278661073533,6.320935862183649
+1,Persistence,p_g,Press (main),1.9185712582787504,6.723350364380206
+1,Persistence,p_k,Press (main),6.241410305978803,9.446114304645821
+1,Persistence,ahu_a,HVAC (air handling),0.29817062601350963,0.967903491927753
+1,Persistence,ahu_b,HVAC (air handling),0.3018014938797772,19.953990821701815
+1,Persistence,ex_b,HVAC (air extraction),4.914811187467584,14.237336250536583
+1,Persistence,comp_a,Compressed air,3.3010212776176613,5.074377423047888
+1,Persistence,comp_b,Compressed air,3.0423121299214966,4.42466326659038
+1,Persistence,mh_a,Material handling,0.9232091099838311,8.604015198386493
+1,Persistence,u_e,Utilities,1.893815891670638,9.54675036343063
+1,Persistence,mix_a,Process mixing,3.2015397134334544,13.208316459766257
+1,XGBoost,p_b,Press (main),6.853079466010427,12.373894910196151
+1,XGBoost,p_c,Press (drive),1.785127784415022,7.504906273973196
+1,XGBoost,p_e,Press (drive),2.0909626083307944,6.140859348989115
+1,XGBoost,p_g,Press (main),1.7754990161004398,6.221974766558923
+1,XGBoost,p_k,Press (main),5.705515555736532,8.635059940666737
+1,XGBoost,ahu_a,HVAC (air handling),0.3281091854362517,1.0650882367699417
+1,XGBoost,ahu_b,HVAC (air handling),0.6128691428715657,40.52062531087067
+1,XGBoost,ex_b,HVAC (air extraction),2.5782626907310555,7.468769698366638
+1,XGBoost,comp_a,Compressed air,3.098616871704686,4.763238456857564
+1,XGBoost,comp_b,Compressed air,2.988782421839742,4.346810987499359
+1,XGBoost,mh_a,Material handling,0.581984462910522,5.423910043732811
+1,XGBoost,u_e,Utilities,1.5418605851211744,7.772539118562278
+1,XGBoost,mix_a,Process mixing,2.013631505979329,8.307465952314356
+1,Enhanced (conference features),p_b,Press (main),6.142661526153934,11.091166908324631
+1,Enhanced (conference features),p_c,Press (drive),1.574522235734245,6.619493522333191
+1,Enhanced (conference features),p_e,Press (drive),1.882612860784492,5.528965817281914
+1,Enhanced (conference features),p_g,Press (main),1.693628098594954,5.935070195948144
+1,Enhanced (conference features),p_k,Press (main),4.803568317075296,7.270000395552028
+1,Enhanced (conference features),ahu_a,HVAC (air handling),0.295922073899883,0.9606043777539036
+1,Enhanced (conference features),ahu_b,HVAC (air handling),0.6078522463684304,40.188926797751755
+1,Enhanced (conference features),ex_b,HVAC (air extraction),2.136920569137465,6.190279854712886
+1,Enhanced (conference features),comp_a,Compressed air,2.8175195248891,4.331131569200935
+1,Enhanced (conference features),comp_b,Compressed air,2.6381101767972583,3.8368019762634558
+1,Enhanced (conference features),mh_a,Material handling,0.4806118369114907,4.4791494197705
+1,Enhanced (conference features),u_e,Utilities,1.4751207378069118,7.43610268648615
+1,Enhanced (conference features),mix_a,Process mixing,1.9703534745694766,8.128917508195887
+1,LSTM,p_b,Press (main),7.503556784768703,13.548394348543802
+1,LSTM,p_c,Press (drive),1.9774506052688847,8.313456091782099
+1,LSTM,p_e,Press (drive),2.150011126683917,6.314276436663483
+1,LSTM,p_g,Press (main),1.829517491041918,6.411274554937325
+1,LSTM,p_k,Press (main),5.973954207505063,9.041330649381651
+1,LSTM,ahu_a,HVAC (air handling),0.6127605925082328,1.9891064560382463
+1,LSTM,ahu_b,HVAC (air handling),0.2521378740563836,16.67041723368225
+1,LSTM,ex_b,HVAC (air extraction),2.7379671131811256,7.931405082797546
+1,LSTM,comp_a,Compressed air,3.3830131972247277,5.200416582064373
+1,LSTM,comp_b,Compressed air,2.977774928412592,4.330801962210556
+1,LSTM,mh_a,Material handling,0.6035048178615733,5.624472905462762
+1,LSTM,u_e,Utilities,1.6873881111937519,8.506145256589217
+1,LSTM,mix_a,Process mixing,2.29722687374018,9.477470918422352
+1,Transformer,p_b,Press (main),7.833900833578207,14.144862339970315
+1,Transformer,p_c,Press (drive),2.083917165199441,8.761055171560587
+1,Transformer,p_e,Press (drive),2.165705803891034,6.360369468108762
+1,Transformer,p_g,Press (main),1.8908487546437773,6.626200933984305
+1,Transformer,p_k,Press (main),6.064930089122811,9.179018853585108
+1,Transformer,ahu_a,HVAC (air handling),0.6191734793941374,2.0099235824372883
+1,Transformer,ahu_b,HVAC (air handling),0.5013487467856866,33.147312040206
+1,Transformer,ex_b,HVAC (air extraction),3.4594474628010503,10.021405683814798
+1,Transformer,comp_a,Compressed air,3.1499212391706135,4.842104269004264
+1,Transformer,comp_b,Compressed air,3.003267161389726,4.367877233261131
+1,Transformer,mh_a,Material handling,0.6692429346533038,6.237131240256773
+1,Transformer,u_e,Utilities,1.6612432151129215,8.37434849785501
+1,Transformer,mix_a,Process mixing,2.416921090557584,9.971283032479395
+1,Single-stage enhanced,p_b,Press (main),6.000311364128613,10.83413998282538
+1,Single-stage enhanced,p_c,Press (drive),1.551844104694191,6.524151749374198
+1,Single-stage enhanced,p_e,Press (drive),1.9009333757085085,5.582770560083723
+1,Single-stage enhanced,p_g,Press (main),1.7042515907401437,5.972298659304481
+1,Single-stage enhanced,p_k,Press (main),4.828438885412894,7.307640963920592
+1,Single-stage enhanced,ahu_a,HVAC (air handling),0.3024680263827389,0.981853453663421
+1,Single-stage enhanced,ahu_b,HVAC (air handling),0.6127807108162768,40.51477851270909
+1,Single-stage enhanced,ex_b,HVAC (air extraction),2.020859032813323,5.854070170276951
+1,Single-stage enhanced,comp_a,Compressed air,2.7557781181108556,4.236221789991986
+1,Single-stage enhanced,comp_b,Compressed air,2.5587890180606556,3.7214392513564993
+1,Single-stage enhanced,mh_a,Material handling,0.49624275712449784,4.624824623386976
+1,Single-stage enhanced,u_e,Utilities,1.3939203997153697,7.026770733683561
+1,Single-stage enhanced,mix_a,Process mixing,2.001753064937441,8.258460091893005
+1,Enhanced XGBoost,p_b,Press (main),5.895761275592306,10.645364730062537
+1,Enhanced XGBoost,p_c,Press (drive),1.5463211683552645,6.500932616300008
+1,Enhanced XGBoost,p_e,Press (drive),1.8499393235096218,5.433008292245583
+1,Enhanced XGBoost,p_g,Press (main),1.718036764212378,6.020606769148021
+1,Enhanced XGBoost,p_k,Press (main),4.776767316560327,7.229438198559346
+1,Enhanced XGBoost,ahu_a,HVAC (air handling),0.3206125069210283,1.040752971389321
+1,Enhanced XGBoost,ahu_b,HVAC (air handling),0.6217939984828135,41.11070352639731
+1,Enhanced XGBoost,ex_b,HVAC (air extraction),1.9433436554948047,5.629521871395176
+1,Enhanced XGBoost,comp_a,Compressed air,2.7310700152281537,4.198240138590814
+1,Enhanced XGBoost,comp_b,Compressed air,2.582777961538911,3.756328175464128
+1,Enhanced XGBoost,mh_a,Material handling,0.49109615196246414,4.576859900600598
+1,Enhanced XGBoost,u_e,Utilities,1.3391129512347142,6.750485678202359
+1,Enhanced XGBoost,mix_a,Process mixing,1.968292632085452,8.120415267980496
+6,Persistence,p_b,Press (main),17.4401540008872,31.489877491563124
+6,Persistence,p_c,Press (drive),5.757773061048618,24.206416788329722
+6,Persistence,p_e,Press (drive),4.424599319950542,12.994417973423026
+6,Persistence,p_g,Press (main),3.372907798187435,11.819858541146527
+6,Persistence,p_k,Press (main),14.473895764006516,21.905637847485366
+6,Persistence,ahu_a,HVAC (air handling),0.6196513017351823,2.011474660484787
+6,Persistence,ahu_b,HVAC (air handling),0.781390371408853,51.66262134364865
+6,Persistence,ex_b,HVAC (air extraction),12.579391794901671,36.44026677320598
+6,Persistence,comp_a,Compressed air,7.539199897796291,11.58936660257829
+6,Persistence,comp_b,Compressed air,6.577381825289877,9.565980908556634
+6,Persistence,mh_a,Material handling,2.9477293541555323,27.471899799957985
+6,Persistence,u_e,Utilities,5.288290840616654,26.658342411546393
+6,Persistence,mix_a,Process mixing,4.326460012718719,17.849303183320007
+6,XGBoost,p_b,Press (main),12.808693498052829,23.127329555699227
+6,XGBoost,p_c,Press (drive),4.969276283962956,20.891475157248117
+6,XGBoost,p_e,Press (drive),3.602496195303241,10.58001819472317
+6,XGBoost,p_g,Press (main),2.7807238101822134,9.744636985337856
+6,XGBoost,p_k,Press (main),12.927883240014044,19.565812342974386
+6,XGBoost,ahu_a,HVAC (air handling),0.7217632605647816,2.3429443389039957
+6,XGBoost,ahu_b,HVAC (air handling),0.7077471331194172,46.79360468631835
+6,XGBoost,ex_b,HVAC (air extraction),7.0787080343986215,20.505761597128043
+6,XGBoost,comp_a,Compressed air,5.898639485632835,9.067473522677762
+6,XGBoost,comp_b,Compressed air,5.57302752141001,8.10527293210917
+6,XGBoost,mh_a,Material handling,1.5459395233325015,14.407664537422262
+6,XGBoost,u_e,Utilities,3.122394780800506,15.74003240731349
+6,XGBoost,mix_a,Process mixing,2.4910502225505584,10.277111203263177
+6,Enhanced (conference features),p_b,Press (main),12.996987148208865,23.467311873260826
+6,Enhanced (conference features),p_c,Press (drive),4.898911557581539,20.595652818311546
+6,Enhanced (conference features),p_e,Press (drive),3.7486942072967273,11.00938093185529
+6,Enhanced (conference features),p_g,Press (main),2.724125657462829,9.546297096179654
+6,Enhanced (conference features),p_k,Press (main),14.121491303138692,21.372288387086044
+6,Enhanced (conference features),ahu_a,HVAC (air handling),0.6999308681244554,2.2720733441227345
+6,Enhanced (conference features),ahu_b,HVAC (air handling),0.7129252677480532,47.13596366382063
+6,Enhanced (conference features),ex_b,HVAC (air extraction),7.646295844848054,22.14996280869853
+6,Enhanced (conference features),comp_a,Compressed air,5.903771233911239,9.07536211999801
+6,Enhanced (conference features),comp_b,Compressed air,5.483823261627677,7.975536470291079
+6,Enhanced (conference features),mh_a,Material handling,1.5379050343188292,14.332785655880336
+6,Enhanced (conference features),u_e,Utilities,3.219343600070969,16.228752657088137
+6,Enhanced (conference features),mix_a,Process mixing,2.453967989321498,10.12412422969257
+6,LSTM,p_b,Press (main),13.412379896045264,24.21734348075618
+6,LSTM,p_c,Press (drive),4.97119840567456,20.899556003571103
+6,LSTM,p_e,Press (drive),4.175394202334411,12.262538039161264
+6,LSTM,p_g,Press (main),2.8701890551920815,10.058154758024653
+6,LSTM,p_k,Press (main),12.673149104608388,19.180282848457427
+6,LSTM,ahu_a,HVAC (air handling),1.0361245457054187,3.363404971403498
+6,LSTM,ahu_b,HVAC (air handling),0.5816561177517331,38.45693633189302
+6,LSTM,ex_b,HVAC (air extraction),6.841000487639914,19.817164997298605
+6,LSTM,comp_a,Compressed air,6.228140305031226,9.573986925111102
+6,LSTM,comp_b,Compressed air,5.729154159787823,8.332339640673482
+6,LSTM,mh_a,Material handling,1.8654672822481757,17.38556159702232
+6,LSTM,u_e,Utilities,3.4446017026547855,17.36428166081335
+6,LSTM,mix_a,Process mixing,2.6395771983760232,10.88987614610716
+6,Transformer,p_b,Press (main),13.23075404688587,23.889400519986488
+6,Transformer,p_c,Press (drive),5.108756099309027,21.47786619906722
+6,Transformer,p_e,Press (drive),4.006402532142793,11.766233574575015
+6,Transformer,p_g,Press (main),2.9246020142140954,10.248836957754818
+6,Transformer,p_k,Press (main),13.041600439828077,19.73791858422224
+6,Transformer,ahu_a,HVAC (air handling),1.2773446889394457,4.146439243025375
+6,Transformer,ahu_b,HVAC (air handling),0.6363090740573917,42.07038626708916
+6,Transformer,ex_b,HVAC (air extraction),7.037966143274671,20.387739565092804
+6,Transformer,comp_a,Compressed air,6.231635423293983,9.57935967121355
+6,Transformer,comp_b,Compressed air,5.877381107693937,8.54791723544707
+6,Transformer,mh_a,Material handling,1.7621814794002275,16.422970773479797
+6,Transformer,u_e,Utilities,3.3630222590546714,16.953038632246926
+6,Transformer,mix_a,Process mixing,2.698365114503554,11.132412384831461
+6,Single-stage enhanced,p_b,Press (main),12.746297602761222,23.014667758182465
+6,Single-stage enhanced,p_c,Press (drive),4.769427164080185,20.05128381254406
+6,Single-stage enhanced,p_e,Press (drive),3.622683887132455,10.639306570139365
+6,Single-stage enhanced,p_g,Press (main),2.7952151917826953,9.795419897540649
+6,Single-stage enhanced,p_k,Press (main),12.900892640667308,19.524963196053868
+6,Single-stage enhanced,ahu_a,HVAC (air handling),0.7051430661175151,2.2889928666979484
+6,Single-stage enhanced,ahu_b,HVAC (air handling),0.7081577943099346,46.820756074872044
+6,Single-stage enhanced,ex_b,HVAC (air extraction),6.875130247967024,19.916032859235262
+6,Single-stage enhanced,comp_a,Compressed air,5.8046371228769,8.922971737573812
+6,Single-stage enhanced,comp_b,Compressed air,5.419947070360527,7.882636522803852
+6,Single-stage enhanced,mh_a,Material handling,1.544294279787001,14.392331390990485
+6,Single-stage enhanced,u_e,Utilities,3.2240710241991346,16.252583663160138
+6,Single-stage enhanced,mix_a,Process mixing,2.500911965400851,10.317796945771681
+6,Enhanced XGBoost,p_b,Press (main),12.757268949210557,23.034477580709808
+6,Enhanced XGBoost,p_c,Press (drive),4.861446656599246,20.438145567071306
+6,Enhanced XGBoost,p_e,Press (drive),3.5515913341293146,10.430517868221184
+6,Enhanced XGBoost,p_g,Press (main),2.7757909121197732,9.72735037070603
+6,Enhanced XGBoost,p_k,Press (main),11.943309757976188,18.075701423052383
+6,Enhanced XGBoost,ahu_a,HVAC (air handling),0.7208540351381277,2.3399928661946485
+6,Enhanced XGBoost,ahu_b,HVAC (air handling),0.6933793652731438,45.843661384026134
+6,Enhanced XGBoost,ex_b,HVAC (air extraction),6.411662998018417,18.57345044315881
+6,Enhanced XGBoost,comp_a,Compressed air,5.7349719044146115,8.815881360988339
+6,Enhanced XGBoost,comp_b,Compressed air,5.434082993633799,7.903195458828672
+6,Enhanced XGBoost,mh_a,Material handling,1.4487827166936402,13.502194008690044
+6,Enhanced XGBoost,u_e,Utilities,3.0903137894468613,15.578311715660384
+6,Enhanced XGBoost,mix_a,Process mixing,2.464347245806445,10.166945033599838
+24,Persistence,p_b,Press (main),19.991107265664592,36.09586926150143
+24,Persistence,p_c,Press (drive),7.663585217870464,32.21869565016687
+24,Persistence,p_e,Press (drive),5.261142167685955,15.451225162073284
+24,Persistence,p_g,Press (main),4.018449077378332,14.08206286425538
+24,Persistence,p_k,Press (main),19.211540603044302,29.075865807261845
+24,Persistence,ahu_a,HVAC (air handling),1.1455944955448454,3.718759716192934
+24,Persistence,ahu_b,HVAC (air handling),0.8550276275627079,56.53124248445269
+24,Persistence,ex_b,HVAC (air extraction),13.247415768067606,38.37541373340557
+24,Persistence,comp_a,Compressed air,10.045652270423643,15.442321267803619
+24,Persistence,comp_b,Compressed air,9.247382736641722,13.44916397778569
+24,Persistence,mh_a,Material handling,2.4149736810047773,22.50678641530345
+24,Persistence,u_e,Utilities,5.338525628040488,26.911576623596588
+24,Persistence,mix_a,Process mixing,3.625862840539911,14.958909813490148
+24,XGBoost,p_b,Press (main),16.577275121560955,29.931866581873997
+24,XGBoost,p_c,Press (drive),5.779590915692918,24.298141848929962
+24,XGBoost,p_e,Press (drive),4.239302509085595,12.45022763314418
+24,XGBoost,p_g,Press (main),3.1986424086491887,11.209171153229557
+24,XGBoost,p_k,Press (main),17.72816068025596,26.83083213362998
+24,XGBoost,ahu_a,HVAC (air handling),1.0742681899114814,3.4872245673023414
+24,XGBoost,ahu_b,HVAC (air handling),0.8001738417573278,52.90451445065386
+24,XGBoost,ex_b,HVAC (air extraction),10.478761912874258,30.35511460202778
+24,XGBoost,comp_a,Compressed air,9.131976530157146,14.037805768363729
+24,XGBoost,comp_b,Compressed air,9.009458872690372,13.103133414150541
+24,XGBoost,mh_a,Material handling,1.742354922391477,16.23819356971287
+24,XGBoost,u_e,Utilities,3.637005706693795,18.33419272955222
+24,XGBoost,mix_a,Process mixing,2.7578603582887147,11.377866784309324
+24,Enhanced (conference features),p_b,Press (main),16.484824548940168,29.764938170249575
+24,Enhanced (conference features),p_c,Press (drive),5.701142411916451,23.968334272511143
+24,Enhanced (conference features),p_e,Press (drive),4.335394222001843,12.732435306907023
+24,Enhanced (conference features),p_g,Press (main),3.1015352009842725,10.868873248098007
+24,Enhanced (conference features),p_k,Press (main),17.596607749723077,26.631732257479495
+24,Enhanced (conference features),ahu_a,HVAC (air handling),1.065046704124271,3.4572903366454333
+24,Enhanced (conference features),ahu_b,HVAC (air handling),0.7943603794781411,52.520149974951806
+24,Enhanced (conference features),ex_b,HVAC (air extraction),10.345399565502335,29.968787536699907
+24,Enhanced (conference features),comp_a,Compressed air,9.25224795347699,14.222688731484919
+24,Enhanced (conference features),comp_b,Compressed air,8.953273459904617,13.021418744039503
+24,Enhanced (conference features),mh_a,Material handling,1.715234046779521,15.985435637154223
+24,Enhanced (conference features),u_e,Utilities,3.761009753655201,18.959298731462123
+24,Enhanced (conference features),mix_a,Process mixing,2.6765846110398748,11.042554438920556
+24,LSTM,p_b,Press (main),16.818018897584494,30.36655265250456
+24,LSTM,p_c,Press (drive),5.585017663968614,23.480130930965558
+24,LSTM,p_e,Press (drive),4.980406593509434,14.626744768015953
+24,LSTM,p_g,Press (main),3.235852453401724,11.339568273933851
+24,LSTM,p_k,Press (main),18.988456685918045,28.738237598668643
+24,LSTM,ahu_a,HVAC (air handling),1.527162754022276,4.957383569678633
+24,LSTM,ahu_b,HVAC (air handling),0.7213273857199427,47.69148041338557
+24,LSTM,ex_b,HVAC (air extraction),10.368976460326941,30.037085619079434
+24,LSTM,comp_a,Compressed air,9.318187927921304,14.324052609344582
+24,LSTM,comp_b,Compressed air,8.701572938472825,12.655351751633424
+24,LSTM,mh_a,Material handling,1.853404555091848,17.273140817521075
+24,LSTM,u_e,Utilities,3.7518139418768253,18.912942525548253
+24,LSTM,mix_a,Process mixing,2.9055232262907387,11.987066751982304
+24,Transformer,p_b,Press (main),16.76862558848809,30.277368276479578
+24,Transformer,p_c,Press (drive),5.6703245631895545,23.83877208190492
+24,Transformer,p_e,Press (drive),5.1110920550491015,15.010549354035536
+24,Transformer,p_g,Press (main),3.2074699207138164,11.240105868945841
+24,Transformer,p_k,Press (main),20.67288126564808,31.287543979382487
+24,Transformer,ahu_a,HVAC (air handling),1.6919211357320019,5.49221228541532
+24,Transformer,ahu_b,HVAC (air handling),0.7377610020662607,48.77800992497382
+24,Transformer,ex_b,HVAC (air extraction),10.738574090321046,31.107744396174557
+24,Transformer,comp_a,Compressed air,9.600200361720361,14.757566181884016
+24,Transformer,comp_b,Compressed air,9.238595746874225,13.436384397917548
+24,Transformer,mh_a,Material handling,1.9273753962695197,17.962525524460617
+24,Transformer,u_e,Utilities,3.840554798955297,19.360286331929398
+24,Transformer,mix_a,Process mixing,3.1717608943364968,13.085460552410064
+24,Single-stage enhanced,p_b,Press (main),16.434875989046486,29.674751235440855
+24,Single-stage enhanced,p_c,Press (drive),5.765775023653299,24.240058065934758
+24,Single-stage enhanced,p_e,Press (drive),4.354896535328198,12.789710823283983
+24,Single-stage enhanced,p_g,Press (main),3.224697612197052,11.300477776067579
+24,Single-stage enhanced,p_k,Press (main),17.464656013827444,26.432028806037984
+24,Single-stage enhanced,ahu_a,HVAC (air handling),1.0977254349812677,3.563370060631462
+24,Single-stage enhanced,ahu_b,HVAC (air handling),0.8181614643671489,54.0937890690346
+24,Single-stage enhanced,ex_b,HVAC (air extraction),10.026524118958088,29.045061928264133
+24,Single-stage enhanced,comp_a,Compressed air,9.303881893818433,14.302061167799753
+24,Single-stage enhanced,comp_b,Compressed air,9.26203467412873,13.470473392078041
+24,Single-stage enhanced,mh_a,Material handling,1.64255493205567,15.30808940981875
+24,Single-stage enhanced,u_e,Utilities,3.5956450220558325,18.125692984230685
+24,Single-stage enhanced,mix_a,Process mixing,2.7771158569179955,11.45730753540136
+24,Enhanced XGBoost,p_b,Press (main),16.426866815404303,29.660289901166617
+24,Enhanced XGBoost,p_c,Press (drive),5.727207931978363,24.077917063589105
+24,Enhanced XGBoost,p_e,Press (drive),4.243060031850109,12.461262942291066
+24,Enhanced XGBoost,p_g,Press (main),3.1303487113931854,10.969845951025203
+24,Enhanced XGBoost,p_k,Press (main),17.688591697305903,26.770946127496597
+24,Enhanced XGBoost,ahu_a,HVAC (air handling),1.1138466025210887,3.6157016218062306
+24,Enhanced XGBoost,ahu_b,HVAC (air handling),0.810765709996927,53.60480933296426
+24,Enhanced XGBoost,ex_b,HVAC (air extraction),9.637229629993472,27.917344844441452
+24,Enhanced XGBoost,comp_a,Compressed air,9.14781128112877,14.062147175483645
+24,Enhanced XGBoost,comp_b,Compressed air,9.39255988873421,13.660306025208815
+24,Enhanced XGBoost,mh_a,Material handling,1.5963303525291375,14.87729103436481
+24,Enhanced XGBoost,u_e,Utilities,3.523281640393891,17.76090824289514
+24,Enhanced XGBoost,mix_a,Process mixing,2.752526014100826,11.355859340252543

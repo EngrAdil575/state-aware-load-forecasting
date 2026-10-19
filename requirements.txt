@@ -1,0 +1,17 @@
+# Core analysis
+xgboost
+lightgbm
+scikit-learn
+statsmodels
+shap
+pyarrow
+pandas
+numpy
+scipy
+matplotlib
+
+# Neural-network baselines (LSTM, CNN-LSTM, TCN, Transformer)
+tensorflow
+
+# The code is written for Google Colab (single cell, T4 GPU).
+# Versions are left unpinned to match the Colab environment used in the study.
