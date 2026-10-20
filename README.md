@@ -1,8 +1,8 @@
-# State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets
+# State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring
 
 Code, data, trained offline digital twin, and results for the manuscript:
 
-> **State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets**
+> **State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring**
 > Adil Zohaib, Bilal Ahmed, Muhammad Amad Khan, Saqib Nawaz, Haris Sheh Zad, Sohail Khalid.
 
 **Status:** This manuscript is currently submitted to ACM Transactions on Internet of Things (ACM TIoT) and is under review. It is not published. This repository is the supporting material for the submitted version.
