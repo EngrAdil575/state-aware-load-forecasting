@@ -1,4 +1,4 @@
-Dataset used in "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets"
+Dataset used in "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring"
 
 Source
   C. Flynn, T. Murphy, J. Walsh, and D. Riordan. 2026. An open industrial energy dataset with asset-level

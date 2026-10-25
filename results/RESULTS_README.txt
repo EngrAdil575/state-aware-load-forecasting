@@ -1,4 +1,4 @@
-Results of "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets"
+Results of "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring"
 All results are produced by Updated_Python_Code.py. Errors are in kW unless stated otherwise.
 
 results/
@@ -13,7 +13,7 @@ results/
   shap_dependence_h1.csv    TreeSHAP values of the 1-h model (seed 42)
   test_info.json            test rows, share of switching hours and persistence RMSE per horizon
   Model names: "Enhanced XGBoost" = state-aware mixture (proposed); "Single-stage enhanced" = single-stage variant;
-  "Enhanced (conference features)" = conference feature set; "Ablation -x" = single-stage variant without group x.
+  "Fixed-schedule feature set" = fixed-schedule feature set; "Ablation -x" = single-stage variant without group x.
 
 results_updated/
   row_counts_per_asset_split_horizon.csv   rows per asset, split and horizon

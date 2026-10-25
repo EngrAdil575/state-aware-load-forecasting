@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 # Status: manuscript submitted to ACM Transactions on Internet of Things (ACM TIoT), under review. Not yet published.
 message: "If you use this repository, please cite the manuscript below (submitted to ACM Transactions on Internet of Things, under review) and the original dataset of Flynn et al. (2026)."
-title: "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Sub-Metered Industrial Assets"
+title: "State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring"
 type: software
 authors:
   - family-names: Zohaib

@@ -1,5 +1,5 @@
 # =====================================================================================================
-#  STATE-AWARE MULTI-HORIZON LOAD FORECASTING AND DAILY ANOMALY DETECTION FOR SUB-METERED INDUSTRIAL ASSETS
+#  STATE-AWARE MULTI-HORIZON LOAD FORECASTING AND DAILY ANOMALY DETECTION FOR INDUSTRIAL IOT ENERGY MONITORING
 #  Complete code of the manuscript in one cell (Google Colab): data preparation, load profiling, 1/6/24-h forecasting
 #  (state-aware XGBoost mixture and all baselines), statistical tests, rolling-origin evaluation, equal-information
 #  comparisons, classifier diagnostics, chronological anomaly detection, TreeSHAP, figures and the digital twin.
@@ -118,7 +118,7 @@ for H in HS:
         L = np.load(fn)
         for k in L.files:
             if '|' in k or k in ('auc', 'best_iter'): continue
-            k2 = {'Enhanced XGBoost': 'Enhanced (conference features)', 'Two-Stage Hybrid': 'old Two-Stage'}.get(k, k)
+            k2 = {'Enhanced XGBoost': 'Fixed-schedule feature set', 'Two-Stage Hybrid': 'old Two-Stage'}.get(k, k)
             if k2.startswith('Ablation'): k2 = 'old ' + k2
             preds[(k2, sd)] = L[k]
         fn2 = f'{PR}/v2_h{H}_s{sd}.npz'
@@ -136,7 +136,7 @@ for H in HS:
                  MAPE=100 * np.mean(np.abs(e[mk] / y[mk])), R2=1 - np.sum(e ** 2) / np.sum((y - y.mean()) ** 2),
                  SW=np.sqrt(np.mean(e[sw] ** 2)), ST=np.sqrt(np.mean(e[~sw] ** 2)))
         r['Skill'] = 100 * (1 - r['RMSE'] / rp); rows.append(r)
-        if k in ('Enhanced (conference features)', 'Single-stage enhanced', 'Enhanced XGBoost', 'XGBoost', 'Persistence', 'LSTM', 'Transformer') and sd in (0, 42):
+        if k in ('Fixed-schedule feature set', 'Single-stage enhanced', 'Enhanced XGBoost', 'XGBoost', 'Persistence', 'LSTM', 'Transformer') and sd in (0, 42):
             for a in fi.AssetId.unique():
                 m_ = (fi.AssetId == a).values
                 asset_rows.append(dict(H=H, model=k, Asset=a, Type=TYPE[a], RMSE=np.sqrt(np.mean(e[m_] ** 2)),
@@ -158,7 +158,7 @@ for H in HS:
             st, p = dm_test(e1, e2, H); dm_rows.append(dict(H=H, seed=sd, vs='XGBoost', DM=st, p=p))
     if True:
         for sd in SEEDS:
-            for other in ['Single-stage enhanced', 'TCN', 'Enhanced (conference features)']:
+            for other in ['Single-stage enhanced', 'TCN', 'Fixed-schedule feature set']:
                 if (other, sd) in preds and (PROP, sd) in preds and not (other == best):
                     e1 = y - np.clip(np.nan_to_num(preds[(other, sd)]), 0, None) * sc; e2 = y - np.clip(preds[(PROP, sd)], 0, None) * sc
                     st, p = dm_test(e1, e2, H); dm_rows.append(dict(H=H, seed=sd, vs=other, DM=st, p=p))
@@ -272,7 +272,7 @@ import json, numpy as np, pandas as pd
 D='data'; PR='preds'; O='results_updated'
 meta=json.load(open(f'{D}/meta.json')); SC=meta['scale']; SEEDS=[int(s) for s in os.environ.get('SEEDS', '42,7,123,2024,31').split(',')]
 M={'Persistence':None,'ARIMA':None,'VAR':None,'Random Forest':'learned','XGBoost':'learned','LSTM':'learned','TCN':'learned','CNN-LSTM':'learned','Transformer':'learned',
-   'DBSCAN + XGBoost':'learned','Conference feature set':('learned','Enhanced XGBoost'),'State-aware single-stage':('v2','Proposed v2'),'State-aware mixture':('v2','Two-Stage v2')}
+   'DBSCAN + XGBoost':'learned','Fixed-schedule feature set':('learned','Enhanced XGBoost'),'State-aware single-stage':('v2','Proposed v2'),'State-aware mixture':('v2','Two-Stage v2')}
 rows=[]
 for H in [1,6,24]:
     f=pd.read_parquet(f'{D}/feat_h{H}.parquet',columns=['AssetId','load_s','split']); te=(f.split=='test').values
@@ -495,15 +495,15 @@ for H in [1,6,24]:
     cl=dict(np.load(f'{PR}/classical_h{H}.npz'))
     def get(k,sd,part):
         if k in cl: return cl[k][va if part=='va' else te]
-        if k in ('Mixture','Single-stage','Conference'):
-            fn=f'{PR}/v2_h{H}_s{sd}.npz' if k!='Conference' else f'{PR}/learned_h{H}_s{sd}.npz'
-            kk={'Mixture':'Two-Stage v2','Single-stage':'Proposed v2','Conference':'Enhanced XGBoost'}[k]
+        if k in ('Mixture','Single-stage','Fixed-schedule'):
+            fn=f'{PR}/v2_h{H}_s{sd}.npz' if k!='Fixed-schedule' else f'{PR}/learned_h{H}_s{sd}.npz'
+            kk={'Mixture':'Two-Stage v2','Single-stage':'Proposed v2','Fixed-schedule':'Enhanced XGBoost'}[k]
         else: fn=f'{PR}/learned_h{H}_s{sd}.npz'; kk=k
         Z=np.load(fn); return Z[kk+'|va'] if part=='va' else Z[kk]
     kw=lambda p,part: np.clip(np.nan_to_num(p),0,None)*(sc[va] if part=='va' else sc[te])
     vrm={k:np.mean([np.sqrt(np.mean((y[va]-kw(get(k,s,'va'),'va'))**2)) for s in ([0] if k in cl else SEEDS)]) for k in B2}
     best=min(vrm,key=vrm.get); sel[H]=dict(val_rmse={k:round(v,3) for k,v in vrm.items()},selected=best)
-    comps=[best]+(['XGBoost'] if best!='XGBoost' else [])+(['TCN'] if H==6 else [])+['Single-stage','Conference']
+    comps=[best]+(['XGBoost'] if best!='XGBoost' else [])+(['TCN'] if H==6 else [])+['Single-stage','Fixed-schedule']
     ts=f.ts.values[te]; yt=y[te]
     mean_fc=lambda k: np.mean([kw(get(k,s,'te'),'te') for s in ([0] if k in cl else SEEDS)],0)
     for c in comps:
@@ -738,7 +738,7 @@ HS = [1, 6, 24]
 MODELS = [('Persistence', 'Persistence', C['pers'], (0, (1, 1)), 'x'), ('ARIMA', 'ARIMA (B-2)', C['arima'], (0, (5, 2)), 'v'),
           ('LSTM', 'LSTM (B-2)', C['lstm'], '-.', '^'), ('Transformer', 'Transformer', C['tf'], (0, (3, 1, 1, 1)), 'D'),
           ('TCN', 'TCN (B-2)', C['tcn'], (0, (4, 1, 1, 1, 1, 1)), 'h'), ('XGBoost', 'XGBoost (B-2)', C['xgb'], '--', 's'),
-          ('Enhanced (conference features)', 'Conference feature set', C['ts'], ':', 'P'), ('Enhanced XGBoost', 'State-aware mixture (proposed)', C['prop'], '-', 'o')]
+          ('Fixed-schedule feature set', 'Fixed-schedule feature set', C['ts'], ':', 'P'), ('Enhanced XGBoost', 'State-aware mixture (proposed)', C['prop'], '-', 'o')]
 MODELS = [m for m in MODELS]
 def g(m, H, col):
     r = S[(S.model == m) & (S.H == H)]
@@ -1547,11 +1547,12 @@ ROLE = {'p_c': 'Press drive (production)', 'ahu_a': 'Air handling unit (HVAC)',
 K_NN, ALERT_Q = 5, 0.95
 
 twin = {'assets': {},
-        'note': ('Replay of the chronological test period (last 20% of the timeline, never used for '
-                 'training). Forecast = Enhanced XGBoost (hourly + 15-min + ON/OFF + cross-asset '
-                 'features). Day health = mean distance to the 5 most similar real days of the same '
-                 'day type; alert when above the 95th percentile of all real days of that asset. '
-                 'Data: open industrial asset-level energy dataset, 15-min aggregates, Demand_kW.')}
+        'note': ('Offline replay of the test period (19 October to 31 December 2025), which was not used for '
+                 'training. Forecast = state-aware XGBoost mixture (15-min readings, ON/OFF state, recent load '
+                 'profiles). Daily deviation score = mean distance to the 5 most similar training days of the same '
+                 'asset and day type (complete day, computed retrospectively); alert when above the 95th percentile '
+                 "of the asset's validation-day scores. 13 metered assets. Data: open industrial asset-level energy "
+                 'dataset (Flynn et al., 2026), 15-min aggregates, Demand_kW. Display only; no control of the machines.')}
 
 prof_all = hourly.pivot_table(index=['AssetId', 'date'], columns='hour', values=POWER_COL).dropna()
 ctx_idx = daily_indices_ctx.copy()
@@ -2095,7 +2096,7 @@ run('audit.py')
 step('STEP 3  Reference forecasts: persistence, seasonal naive, K-means profile (Baseline-1), ARIMA, VAR')
 if not os.path.exists('preds/classical_h24.npz'): run('classical.py')
 
-step('STEP 4  Tree baselines: XGBoost, random forest, DBSCAN + XGBoost, conference feature set')
+step('STEP 4  Tree baselines: XGBoost, random forest, DBSCAN + XGBoost, fixed-schedule feature set')
 TREES = ['XGBoost', 'Random Forest', 'DBSCAN + XGBoost', 'Enhanced XGBoost']
 if not QUICK: TREES += ['Ablation -q15', 'Ablation -onoff', 'Ablation -cross', 'Ablation -prevday', 'Two-Stage Hybrid']
 for H in [1, 6, 24]:

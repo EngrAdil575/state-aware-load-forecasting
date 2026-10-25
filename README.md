@@ -5,7 +5,7 @@ Code, data, trained offline digital twin, and results for the manuscript:
 > **State-Aware Multi-Horizon Load Forecasting and Daily Anomaly Detection for Industrial IoT Energy Monitoring**
 > Adil Zohaib, Bilal Ahmed, Muhammad Amad Khan, Saqib Nawaz, Haris Sheh Zad, Sohail Khalid.
 
-**Status:** This manuscript is currently submitted to ACM Transactions on Internet of Things (ACM TIoT) and is under review. It is not published. This repository is the supporting material for the submitted version.
+**Status:** This repository accompanies a manuscript submitted to ACM Transactions on Internet of Things (ACM TIoT). The manuscript is not yet published.
 
 This repository is the reproducibility record for the manuscript. It holds the dataset used in the study (in reduced form), the complete analysis code, the offline digital-twin interface, and every result file, figure, and supplementary table reported in the manuscript.
 
@@ -73,3 +73,10 @@ If you use this code or data, please cite the manuscript (see `CITATION.cff`) an
 ## License
 
 The code in this repository is released under the MIT License (see `LICENSE`). The dataset in `data/` keeps its original CC BY 4.0 license and is attributed to Flynn et al. (2026).
+
+
+## Additional analyses
+
+- `code/reviewer_extra_cost_bootstrap.py`: computational cost (Table 12) and weekly block-bootstrap intervals of the RMSE reduction (Section 6.3).
+- `code/reviewer_extra_anomaly_level_vectors.py`: LOF and Isolation Forest on the same 24-h level vectors as the proposed score (Table 10).
+- Outputs are in `results/results_reviewer/`. Run both scripts after `prep.py` and `addfeat.py`.

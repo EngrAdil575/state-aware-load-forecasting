@@ -25,19 +25,19 @@ H,model,Asset,Type,RMSE,NRMSE
 1,XGBoost,mh_a,Material handling,0.581984462910522,5.423910043732811
 1,XGBoost,u_e,Utilities,1.5418605851211744,7.772539118562278
 1,XGBoost,mix_a,Process mixing,2.013631505979329,8.307465952314356
-1,Enhanced (conference features),p_b,Press (main),6.142661526153934,11.091166908324631
-1,Enhanced (conference features),p_c,Press (drive),1.574522235734245,6.619493522333191
-1,Enhanced (conference features),p_e,Press (drive),1.882612860784492,5.528965817281914
-1,Enhanced (conference features),p_g,Press (main),1.693628098594954,5.935070195948144
-1,Enhanced (conference features),p_k,Press (main),4.803568317075296,7.270000395552028
-1,Enhanced (conference features),ahu_a,HVAC (air handling),0.295922073899883,0.9606043777539036
-1,Enhanced (conference features),ahu_b,HVAC (air handling),0.6078522463684304,40.188926797751755
-1,Enhanced (conference features),ex_b,HVAC (air extraction),2.136920569137465,6.190279854712886
-1,Enhanced (conference features),comp_a,Compressed air,2.8175195248891,4.331131569200935
-1,Enhanced (conference features),comp_b,Compressed air,2.6381101767972583,3.8368019762634558
-1,Enhanced (conference features),mh_a,Material handling,0.4806118369114907,4.4791494197705
-1,Enhanced (conference features),u_e,Utilities,1.4751207378069118,7.43610268648615
-1,Enhanced (conference features),mix_a,Process mixing,1.9703534745694766,8.128917508195887
+1,Fixed-schedule feature set,p_b,Press (main),6.142661526153934,11.091166908324631
+1,Fixed-schedule feature set,p_c,Press (drive),1.574522235734245,6.619493522333191
+1,Fixed-schedule feature set,p_e,Press (drive),1.882612860784492,5.528965817281914
+1,Fixed-schedule feature set,p_g,Press (main),1.693628098594954,5.935070195948144
+1,Fixed-schedule feature set,p_k,Press (main),4.803568317075296,7.270000395552028
+1,Fixed-schedule feature set,ahu_a,HVAC (air handling),0.295922073899883,0.9606043777539036
+1,Fixed-schedule feature set,ahu_b,HVAC (air handling),0.6078522463684304,40.188926797751755
+1,Fixed-schedule feature set,ex_b,HVAC (air extraction),2.136920569137465,6.190279854712886
+1,Fixed-schedule feature set,comp_a,Compressed air,2.8175195248891,4.331131569200935
+1,Fixed-schedule feature set,comp_b,Compressed air,2.6381101767972583,3.8368019762634558
+1,Fixed-schedule feature set,mh_a,Material handling,0.4806118369114907,4.4791494197705
+1,Fixed-schedule feature set,u_e,Utilities,1.4751207378069118,7.43610268648615
+1,Fixed-schedule feature set,mix_a,Process mixing,1.9703534745694766,8.128917508195887
 1,LSTM,p_b,Press (main),7.503556784768703,13.548394348543802
 1,LSTM,p_c,Press (drive),1.9774506052688847,8.313456091782099
 1,LSTM,p_e,Press (drive),2.150011126683917,6.314276436663483
@@ -116,19 +116,19 @@ H,model,Asset,Type,RMSE,NRMSE
 6,XGBoost,mh_a,Material handling,1.5459395233325015,14.407664537422262
 6,XGBoost,u_e,Utilities,3.122394780800506,15.74003240731349
 6,XGBoost,mix_a,Process mixing,2.4910502225505584,10.277111203263177
-6,Enhanced (conference features),p_b,Press (main),12.996987148208865,23.467311873260826
-6,Enhanced (conference features),p_c,Press (drive),4.898911557581539,20.595652818311546
-6,Enhanced (conference features),p_e,Press (drive),3.7486942072967273,11.00938093185529
-6,Enhanced (conference features),p_g,Press (main),2.724125657462829,9.546297096179654
-6,Enhanced (conference features),p_k,Press (main),14.121491303138692,21.372288387086044
-6,Enhanced (conference features),ahu_a,HVAC (air handling),0.6999308681244554,2.2720733441227345
-6,Enhanced (conference features),ahu_b,HVAC (air handling),0.7129252677480532,47.13596366382063
-6,Enhanced (conference features),ex_b,HVAC (air extraction),7.646295844848054,22.14996280869853
-6,Enhanced (conference features),comp_a,Compressed air,5.903771233911239,9.07536211999801
-6,Enhanced (conference features),comp_b,Compressed air,5.483823261627677,7.975536470291079
-6,Enhanced (conference features),mh_a,Material handling,1.5379050343188292,14.332785655880336
-6,Enhanced (conference features),u_e,Utilities,3.219343600070969,16.228752657088137
-6,Enhanced (conference features),mix_a,Process mixing,2.453967989321498,10.12412422969257
+6,Fixed-schedule feature set,p_b,Press (main),12.996987148208865,23.467311873260826
+6,Fixed-schedule feature set,p_c,Press (drive),4.898911557581539,20.595652818311546
+6,Fixed-schedule feature set,p_e,Press (drive),3.7486942072967273,11.00938093185529
+6,Fixed-schedule feature set,p_g,Press (main),2.724125657462829,9.546297096179654
+6,Fixed-schedule feature set,p_k,Press (main),14.121491303138692,21.372288387086044
+6,Fixed-schedule feature set,ahu_a,HVAC (air handling),0.6999308681244554,2.2720733441227345
+6,Fixed-schedule feature set,ahu_b,HVAC (air handling),0.7129252677480532,47.13596366382063
+6,Fixed-schedule feature set,ex_b,HVAC (air extraction),7.646295844848054,22.14996280869853
+6,Fixed-schedule feature set,comp_a,Compressed air,5.903771233911239,9.07536211999801
+6,Fixed-schedule feature set,comp_b,Compressed air,5.483823261627677,7.975536470291079
+6,Fixed-schedule feature set,mh_a,Material handling,1.5379050343188292,14.332785655880336
+6,Fixed-schedule feature set,u_e,Utilities,3.219343600070969,16.228752657088137
+6,Fixed-schedule feature set,mix_a,Process mixing,2.453967989321498,10.12412422969257
 6,LSTM,p_b,Press (main),13.412379896045264,24.21734348075618
 6,LSTM,p_c,Press (drive),4.97119840567456,20.899556003571103
 6,LSTM,p_e,Press (drive),4.175394202334411,12.262538039161264
@@ -207,19 +207,19 @@ H,model,Asset,Type,RMSE,NRMSE
 24,XGBoost,mh_a,Material handling,1.742354922391477,16.23819356971287
 24,XGBoost,u_e,Utilities,3.637005706693795,18.33419272955222
 24,XGBoost,mix_a,Process mixing,2.7578603582887147,11.377866784309324
-24,Enhanced (conference features),p_b,Press (main),16.484824548940168,29.764938170249575
-24,Enhanced (conference features),p_c,Press (drive),5.701142411916451,23.968334272511143
-24,Enhanced (conference features),p_e,Press (drive),4.335394222001843,12.732435306907023
-24,Enhanced (conference features),p_g,Press (main),3.1015352009842725,10.868873248098007
-24,Enhanced (conference features),p_k,Press (main),17.596607749723077,26.631732257479495
-24,Enhanced (conference features),ahu_a,HVAC (air handling),1.065046704124271,3.4572903366454333
-24,Enhanced (conference features),ahu_b,HVAC (air handling),0.7943603794781411,52.520149974951806
-24,Enhanced (conference features),ex_b,HVAC (air extraction),10.345399565502335,29.968787536699907
-24,Enhanced (conference features),comp_a,Compressed air,9.25224795347699,14.222688731484919
-24,Enhanced (conference features),comp_b,Compressed air,8.953273459904617,13.021418744039503
-24,Enhanced (conference features),mh_a,Material handling,1.715234046779521,15.985435637154223
-24,Enhanced (conference features),u_e,Utilities,3.761009753655201,18.959298731462123
-24,Enhanced (conference features),mix_a,Process mixing,2.6765846110398748,11.042554438920556
+24,Fixed-schedule feature set,p_b,Press (main),16.484824548940168,29.764938170249575
+24,Fixed-schedule feature set,p_c,Press (drive),5.701142411916451,23.968334272511143
+24,Fixed-schedule feature set,p_e,Press (drive),4.335394222001843,12.732435306907023
+24,Fixed-schedule feature set,p_g,Press (main),3.1015352009842725,10.868873248098007
+24,Fixed-schedule feature set,p_k,Press (main),17.596607749723077,26.631732257479495
+24,Fixed-schedule feature set,ahu_a,HVAC (air handling),1.065046704124271,3.4572903366454333
+24,Fixed-schedule feature set,ahu_b,HVAC (air handling),0.7943603794781411,52.520149974951806
+24,Fixed-schedule feature set,ex_b,HVAC (air extraction),10.345399565502335,29.968787536699907
+24,Fixed-schedule feature set,comp_a,Compressed air,9.25224795347699,14.222688731484919
+24,Fixed-schedule feature set,comp_b,Compressed air,8.953273459904617,13.021418744039503
+24,Fixed-schedule feature set,mh_a,Material handling,1.715234046779521,15.985435637154223
+24,Fixed-schedule feature set,u_e,Utilities,3.761009753655201,18.959298731462123
+24,Fixed-schedule feature set,mix_a,Process mixing,2.6765846110398748,11.042554438920556
 24,LSTM,p_b,Press (main),16.818018897584494,30.36655265250456
 24,LSTM,p_c,Press (drive),5.585017663968614,23.480130930965558
 24,LSTM,p_e,Press (drive),4.980406593509434,14.626744768015953
