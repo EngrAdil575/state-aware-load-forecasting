@@ -58,9 +58,13 @@ Flags at the top of the code control scope. `QUICK = True` runs one seed for a f
 
 Dependencies are listed in `requirements.txt`. The main libraries are xgboost, lightgbm, scikit-learn, statsmodels, shap, pyarrow, pandas, numpy, scipy, matplotlib, and tensorflow (for the neural-network baselines).
 
-## Offline digital twin
+## Digital Twin Offline Interface
 
-`digital_twin/Updated_Digital_Twin.html` is a self-contained offline replay interface (Figure 11 in the manuscript). Open it in any modern browser. It shows asset state, measured demand, the next-hour forecast of the state-aware mixture, the daily deviation score, and the last 48 hours against the typical weekday. It is an offline replay for illustration, with no live integration.
+The HTML front end brings asset monitoring, load forecasts, and daily deviation scores into one interactive view. It replays recorded industrial telemetry, allowing users to explore asset behavior over time.
+
+Asset tiles indicate running (green), idle (gray), or an alert day (red). Selecting an asset displays its operating state, hourly mean demand, next-hour forecast, and daily deviation score. Charts compare recent demand with forecasts and persistence, and the daily load profile with a typical weekday. Playback controls allow users to move through the recorded period.
+
+The interface demonstrates the analytics view of an industrial energy digital twin through offline replay. It has no live connection or control feedback to the machines. Daily deviation scores use the complete day and are therefore retrospective. The “recorded next hour” value is also shown retrospectively for comparison.
 
 ## Results
 
